@@ -1,4 +1,3 @@
-# RAG Evaluator
 
 ## Overview
 
@@ -34,18 +33,6 @@ metrics = evaluator.evaluate_all(question, response, reference)
 print(metrics)
 ```
 
-## Streamlit Web App
-
-To run the web app:
-
-- cd into streamlit app folder.
-- Create a virtual env
-- Activate
-- Install all dependencies
-- and run
-```
-streamlit run app.py
-```
 
 ## Metrics
 
