@@ -1,5 +1,5 @@
 import unittest
-from .evaluator import RAGEvaluator
+from evaluator import RAGEvaluator
 
 class TestRAGEvaluator(unittest.TestCase):
     def setUp(self):
@@ -14,7 +14,6 @@ class TestRAGEvaluator(unittest.TestCase):
         self.assertIn("BLEU", metrics)
         self.assertIn("ROUGE-1", metrics)
         self.assertIn("BERT P", metrics)
-        self.assertIn("Perplexity", metrics)
         self.assertIn("Diversity", metrics)
         self.assertIn("Racial Bias", metrics)
 

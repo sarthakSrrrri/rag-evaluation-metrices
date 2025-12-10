@@ -9,7 +9,9 @@ from nltk.util import ngrams
 class RAGEvaluator:
     def __init__(self):
         self.gpt2_model, self.gpt2_tokenizer = self.load_gpt2_model()
-        self.bias_pipeline = pipeline("zero-shot-classification", model="Hate-speech-CNERG/dehatebert-mono-english")
+        id2label = {"0": "not toxic", "1": "toxic"}
+        label2id = {"not toxic": "0", "toxic": "1"}
+        self.bias_pipeline = pipeline("zero-shot-classification", model="Hate-speech-CNERG/dehatebert-mono-english" , label2id=label2id, id2label=id2label)
 
     def load_gpt2_model(self):
         model = GPT2LMHeadModel.from_pretrained('gpt2')

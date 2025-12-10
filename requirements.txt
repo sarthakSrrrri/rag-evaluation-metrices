@@ -6,3 +6,10 @@ transformers
 nltk
 textblob
 streamlit
+
+
+
+
+# pip install hf_xet
+# or 
+# pip install huggingface_hub[hf_xet]

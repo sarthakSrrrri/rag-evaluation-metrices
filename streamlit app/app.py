@@ -4,9 +4,9 @@ from evaluation_module import RAGEvaluator
 # Initialize evaluator
 evaluator = RAGEvaluator()
 
-st.title("RAG System Evaluation Dashboard")
+st.title("Evaluation Metrices")
 
-st.write("## Input Data")
+# st.write("## Input Data")
 
 # Pre-filled input fields for testing
 question = st.text_input("Question", "What are the causes of climate change?")
